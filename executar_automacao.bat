@@ -11,13 +11,28 @@ if not exist ".env\Scripts\activate.bat" (
     exit /b
 )
 
-echo Ativando ambiente virtual...
-call .env\Scripts\activate
+REM Perguntar ao usuário se ele deseja atualizar a tradução para uma nova ambientação
+set /p resposta="Gostaria de atualizar a traducao para uma nova ambientacao para algum pais ou regiao? (s/n): "
 
-echo Executando o script Python...
-python main.py
-if errorlevel 1 (
-    echo Houve um erro ao executar main.py
+REM Verificar a resposta do usuário
+if /i "%resposta%"=="s" (
+    echo Ativando ambiente virtual...
+    call .env\Scripts\activate
+
+    echo Executando o script Python...
+    python traduzir_c_regiao.py
+    if errorlevel 1 (
+        echo Houve um erro ao executar traduzir_c_regiao.py
+    )
+) else (
+    echo Ativando ambiente virtual...
+    call .env\Scripts\activate
+
+    echo Executando o script Python...
+    python traduzir.py
+    if errorlevel 1 (
+        echo Houve um erro ao executar traduzir.py
+    )
 )
 
 echo Desativando ambiente virtual...
