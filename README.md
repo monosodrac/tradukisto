@@ -1,6 +1,6 @@
 [PYTHON__BADGE]: https://img.shields.io/badge/python-D4FAFF?style=for-the-badge&logo=python
 
-<h1 align="center" style="font-weight: bold;">Tradukinto</h1>
+<h1 align="center" style="font-weight: bold;">Tradukisto</h1>
 
 ![typescript][PYTHON__BADGE]
 
@@ -22,7 +22,7 @@
 
 <h2 id="about">📌 Sobre</h2>
 
-**Tradukinto** é um tradutor de textos.  
+**Tradukisto** é um tradutor de textos.  
 Estes scripts automatizam o processo de tradução de documentos .docx, adaptando nomes próprios e termos culturais conforme a região ou país de destino. Ele extrai o texto do arquivo, traduz utilizando a API Gemini, e salva o texto traduzido em um arquivo .txt, com ajustes na ambientação e nomes próprios específicos para a região escolhida.
 
 ---
@@ -53,7 +53,7 @@ Estes scripts automatizam o processo de tradução de documentos .docx, adaptand
 <h3 id="cloning">Clonando repositório</h3>
 
 ```bash
-git clone https://github.com/monosodrac/translate-files.git
+git clone https://github.com/monosodrac/tradukisto.git
 ```
 
 <h3 id="executing">Como executar</h3>
